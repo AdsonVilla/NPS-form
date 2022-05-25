@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulário de Satisfação</h1>
+          <p id="description" class="description text-center">
+            Obrigado por nos ajudar a continuar melhorando!
+          </p>
+        </header>
+        <form id="NPS-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required/>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu Email" required/>
+          </div>      
+          <div class="form-group">
+            <p>Em uma escala de 1 a 10, como você avalia o nosso serviço?</p>
+            <label>
+              <input name="user-aval" value="1" type="radio" class="input-radio" checked/>1</label>
+            <label>
+            <input name="user-aval" value="2" type="radio" class="input-radio" checked/>2</label>
+            <label>
+            <input name="user-aval" value="3" type="radio" class="input-radio" checked/>3</label> 
+            <label>
+            <input name="user-aval" value="4" type="radio" class="input-radio" checked/>4</label> 
+            <label>
+            <input name="user-aval" value="5" type="radio" class="input-radio" checked/>5</label>
+            <label>
+            <input name="user-aval" value="6" type="radio" class="input-radio" checked/>6</label>
+            <label>
+            <input name="user-aval" value="7" type="radio" class="input-radio" checked/>7</label>
+            <label>
+            <input name="user-aval" value="8" type="radio" class="input-radio" checked/>8</label>
+          <label>
+            <input name="user-aval" value="9" type="radio" class="input-radio" checked/>9</label>
+          <label>
+            <input name="user-aval" value="10" type="radio" class="input-radio" checked/>10</label>  
+          </div>
+          <div class="form-group">
+            <p>Em uma escala de 1 a 10, qual a possibilidade de você indicar o nosso serviço a um amigo?</p>
+            <label>
+              <input
+                name="user-ind" value="1" type="radio" class="input-radio" checked/>1</label>
+            <label>
+            <input
+                name="user-ind" value="2" type="radio" class="input-radio" checked/>2</label>
+            <label>
+            <input
+                name="user-ind" value="3" type="radio" class="input-radio" checked/>3</label>  
+            <label>
+              <input
+                name="user-ind" value="4" type="radio" class="input-radio" checked/>4</label> 
+            <label>
+              <input
+                name="user-ind" value="5" type="radio" class="input-radio" checked/>5</label>
+            <label>
+            <input
+                name="user-ind" value="6" type="radio" class="input-radio" checked/>6</label>
+            <label>
+            <input
+                name="user-ind" value="7" type="radio" class="input-radio" checked/>7</label>
+            <label>
+              <input
+                name="user-ind" value="8" type="radio" class="input-radio" checked/>8</label>
+            <label>
+              <input
+                name="user-ind" value="9" type="radio" class="input-radio" checked/>9</label>
+            <label>
+              <input
+                name="user-ind" value="10" type="radio" class="input-radio" checked/>10</label>  
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Em qual(is) ponto(s) você acredita que podemos melhorar?
+              <span class="clue">(Marque quantas desejar)</span>
+            </p>
+      
+            <label
+              ><input name="get-better" value="comunication" type="checkbox" class="input-checkbox"/>Comunicação com o cliente</label>
+            <label>
+              <input name="get-better" value="fast" type="checkbox" class="input-checkbox"/>Rapidez na entrega</label>
+            <label
+              ><input name="get-better" value="support" type="checkbox" class="input-checkbox"/>Suporte ao cliente</label>
+            <label
+              ><input name="get-better" value="initial" type="checkbox" class="input-checkbox"/>Contato inicial</label>
+            <label
+              ><input name="get-better" value="Acessibility" type="checkbox" class="input-checkbox"/>Acessibilidade</label>
+              <label
+                 ><input name="get-better" value="Other" type="checkbox" class="input-checkbox"/>Outro (Especifique no campo de comentários e sugestões)</label>
+          </div>
+      
+      
+          <div class="form-group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Digite comentários ou sugestões aqui..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
